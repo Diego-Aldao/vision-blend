@@ -1,9 +1,14 @@
-import React from 'react'
+import GaleriaHome from "@components/GaleriaHome";
+import Header from "@components/Header";
+import React from "react";
 
 const Inicio = () => {
   return (
-    <div>Inicio</div>
-  )
-}
+    <>
+      <Header />
+      <GaleriaHome />
+    </>
+  );
+};
 
-export default Inicio
+export default Inicio;
