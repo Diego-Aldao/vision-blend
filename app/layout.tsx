@@ -1,24 +1,24 @@
-import Navegacion from '@components/Nav/Navegacion'
-import '@styles/globales.css'
+import Navegacion from "@components/Nav/Navegacion";
+import "@styles/globales.css";
 
 export const metadata = {
-  title: 'Sitio de imagenes y videos de stock',
-  description: 'Sitio de imagenes y videos de stock',
-}
+  title: "Sitio de imagenes y videos de stock",
+  description: "Las mejores fotos y videos de stock",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="es">
-      <body >
+      <body>
         <main>
-          <Navegacion/>
+          <Navegacion />
           {children}
         </main>
       </body>
     </html>
-  )
+  );
 }
