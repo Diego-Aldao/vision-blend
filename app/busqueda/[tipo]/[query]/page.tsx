@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
-import GaleriaGrid from "@components/GaleriaGrid";
+import GaleriaGrid from "@components/GaleriaGrid/GaleriaGrid";
 import Seleccion from "@components/Home/Seleccion";
 
 const Busqueda = () => {

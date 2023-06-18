@@ -1,4 +1,4 @@
-import GaleriaGrid from "@components/GaleriaGrid";
+import GaleriaGrid from "@components/GaleriaGrid/GaleriaGrid";
 import React from "react";
 
 type Props = {
