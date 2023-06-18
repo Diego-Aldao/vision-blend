@@ -8,7 +8,7 @@ const Inicio = () => {
   const [tipo, setTipo] = useState<string>("imagen");
   return (
     <>
-      <Header />
+      <Header tipo={tipo} />
       <section className="px-3 py-5">
         <Seleccion tipo={tipo} setTipo={setTipo} />
         <GaleriaHome tipo={tipo} />
