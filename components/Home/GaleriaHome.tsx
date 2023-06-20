@@ -6,8 +6,8 @@ type Props = {
 };
 const Header: React.FC<Props> = ({ tipo }) => {
   return (
-    <header className="my-7 max-w-7xl mx-auto">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium first-letter:uppercase">
+    <header className="my-10">
+      <h2 className="text-2xl md:text-3xl text-main-black font-medium first-letter:uppercase">
         {tipo === "imagen" || undefined
           ? "fotos de stock gratuitas"
           : "videos de stock gratuitos"}
