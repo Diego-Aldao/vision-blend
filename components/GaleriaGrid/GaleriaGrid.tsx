@@ -26,9 +26,9 @@ const GaleriaGrid: React.FC<Props> = ({ categoria, tipo }) => {
   return (
     <>
       {loading ? (
-        <div>cargando...</div>
+        <div>...</div>
       ) : (
-        <div className="columns-2 sm:columns-xs max-w-7xl mx-auto">
+        <div className="columns-2 sm:columns-xs max-w-[1600px] mx-auto">
           {tipo === "imagen" ? (
             <>
               {resultadosImagenes?.photos?.map(

@@ -9,7 +9,7 @@ const Inicio = () => {
   return (
     <>
       <Header tipo={tipo} />
-      <section className="px-3 py-5">
+      <section className="px-3 md:px-6 lg:px-12 py-5 max-w-[1600px] mx-auto">
         <Seleccion tipo={tipo} setTipo={setTipo} />
         <GaleriaHome tipo={tipo} />
       </section>
