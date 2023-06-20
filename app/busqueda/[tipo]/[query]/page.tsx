@@ -10,15 +10,15 @@ const Busqueda = () => {
   const [mediaType, setMediaType] = useState<string>(tipo ? tipo : "imagen");
 
   return (
-    <main className="pt-14 px-3 max-w-7xl mx-auto">
+    <section className="pt-20 px-3 max-w-7xl mx-auto">
       <header className="py-10">
-        <h2 className="text-3xl font-medium capitalize">
-          {tipo} gratis de {query}
+        <h2 className="text-2xl sm:text-3xl lg:text-5xl  font-medium first-letter:uppercase">
+          {tipo === "imagen" ? "imágenes" : "videos"} de {query}
         </h2>
       </header>
       <Seleccion tipo={mediaType} setTipo={setMediaType} />
       <GaleriaGrid categoria={query} tipo={mediaType} />
-    </main>
+    </section>
   );
 };
 
