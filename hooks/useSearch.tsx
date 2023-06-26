@@ -16,13 +16,12 @@ const useSearch = () => {
     try {
       const response = await fetch(url, {
         headers: {
-          Authorization: `Bearer ${process.env.PEXELS_API}`,
+          Authorization: `${process.env.NEXT_PUBLIC_PEXELS_KEY}`,
         },
       });
       const data = await response.json();
       tipo === "imagen" ? setDataImagen(data) : setDataVideo(data);
       setLoading(false);
-      console.log(data);
     } catch (error) {
       console.log(error);
       setLoading(false);

@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { Imagen, Video } from "@customTypes/customTypes";
 
@@ -18,11 +17,10 @@ const useSearch = () => {
     try {
       const response = await fetch(url, {
         headers: {
-          Authorization: `Bearer ${process.env.PEXELS_API}`,
+          Authorization: `${process.env.NEXT_PUBLIC_PEXELS_KEY}`,
         },
       });
       const data = await response.json();
-      console.log(data);
       if (tipo === "imagen") {
         setDataImagen(data);
         setDataVideo(undefined);

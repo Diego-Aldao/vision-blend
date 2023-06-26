@@ -15,7 +15,7 @@ const useCurated = () => {
     try {
       const respuesta = await fetch(url, {
         headers: {
-          Authorization: `Bearer ${process.env.PEXELS_API}`,
+          Authorization: `${process.env.NEXT_PUBLIC_PEXELS_KEY}`,
         },
       });
       const data = await respuesta.json();
